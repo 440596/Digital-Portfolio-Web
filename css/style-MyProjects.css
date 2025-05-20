@@ -1,0 +1,176 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #606060;
+  margin: 0;
+}
+
+.navbar {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #505050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  gap: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: -10px;
+  display: block;
+}
+
+.social-group {
+  margin-top: auto;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-icons a {
+  color: #f1f1f1;
+  font-size: 28px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}
+
+.contact-icon i {
+  font-size: 36px;
+  color: #f1f1f1;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-icon i:hover {
+  transform: scale(1.2);
+  color: #00bcd4;
+}
+
+.main {
+  margin-left: 220px;
+  padding: 40px;
+}
+
+.main h1 {
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.image-section {
+  flex: 1 1 400px;
+  background-color: #3c3c3c;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.image-description {
+  margin-top: 20px;
+  background-color: #444;
+  color: #f1f1f1;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+
+  .navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-image {
+    max-width: 100%;
+  }
+
+  .social-group {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 12px;
+    margin: 0;
+  }
+
+  .contact-icon {
+    margin: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
